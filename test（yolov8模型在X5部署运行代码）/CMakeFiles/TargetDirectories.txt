@@ -1,0 +1,7 @@
+/root/test/CMakeFiles/main.dir
+/root/test/CMakeFiles/edit_cache.dir
+/root/test/CMakeFiles/rebuild_cache.dir
+/root/test/CMakeFiles/list_install_components.dir
+/root/test/CMakeFiles/install.dir
+/root/test/CMakeFiles/install/local.dir
+/root/test/CMakeFiles/install/strip.dir
