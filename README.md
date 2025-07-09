@@ -1,9 +1,34 @@
 # -RDK-X5-YOLO-
-基于RDK X5与YOLO模型的“坠影捕手”——边坡落石检测仪,是一款面向山区公路、铁路边坡地质灾害防治的，低成本、高可靠性智能监测系统。通过沙盘模拟实景，结合嵌入式AI与视觉识别等技术，实现自动巡线、实时落石检测与远程预警，为基层灾害防治提供可落地的技术解决方案。   可应用于"微型地质灾害模拟监测与预警系统"。
-①需求分析与架构设计：明确地质灾害检测需求，设计STM32（控制层）、K210（边缘计算层）、RDK X5（主控层）三级异构计算架构，配置视觉感知与无线通信模块。
-②开发环境搭建：在开发机部署WSL2 Ubuntu、Docker及NVIDIA工具链，并行构建Yolov8虚拟环境与STM32小车硬件平台，完成K210模型训练框架初始化。
-③算法与硬件协同开发：1
-（1）软件侧：建立地质灾害图像数据集，训练Yolov8检测模型并进行量化压缩
-（2）硬件侧：组装STM32小车底盘，实现K210串口通信协议
-④系统集成与部署：将量化模型部署至RDK X5开发板，联合调试小车寻迹算法与落石检测功能，完成三级架构的通信协议对接。
-⑤测试优化与场景适配：开展野外环境实测，优化多传感器融合算法，制定模块化部署方案，通过快速组装实现不同地形适配，最终推广至山区地质灾害监测场景。
+"Falling Shadow Catcher" - Landslide Detection System Based on RDK X5 and YOLO Model
+
+This is a low-cost, high-reliability intelligent monitoring system designed for geological disaster prevention on mountainous highway and railway slopes. By combining sandbox simulation with embedded AI and visual recognition technologies, the system enables automatic route tracking, real-time rockfall detection, and remote early warning, providing practical technical solutions for grassroots disaster prevention. It can be applied to the "Micro Geological Disaster Simulation Monitoring and Warning System".
+
+①Requirements Analysis and Architecture Design:
+Clarify geological disaster detection requirements
+Design a three-tier heterogeneous computing architecture comprising:
+STM32 (control layer)
+K210 (edge computing layer)
+RDK X5 (main control layer)
+Configure visual perception modules and wireless communication modules
+②Development Environment Setup:
+Deploy WSL2 Ubuntu, Docker, and NVIDIA toolchain on development machines
+Parallelly build YOLOv8 virtual environment and STM32 robot hardware platform
+Initialize K210 model training framework
+③Algorithmic and Hardware Co-development:
+(1) Software Development:
+- Establish geological disaster image dataset
+- Train YOLOv8 detection model with quantization and compression
+(2) Hardware Development:
+- Assemble STM32 robot chassis
+- Implement K210 serial communication protocol
+④System Integration and Deployment:
+Deploy quantized model to RDK X5 development board
+Jointly debug robot path-following algorithm and rockfall detection functions
+Complete communication protocol integration across three architecture layers
+⑤Testing Optimization and Scene Adaptation:
+Conduct field environment testing
+Optimize multi-sensor fusion algorithms
+Develop modular deployment solutions
+Enable rapid assembly for different terrain adaptations
+Final deployment for mountainous geological disaster monitoring scenarios
+This integrated system demonstrates a complete technical implementation pathway from theoretical design to practical field deployment, offering a scalable solution for geological disaster monitoring in challenging mountainous environments.
